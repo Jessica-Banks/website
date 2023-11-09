@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+}
+
+.swiper {
+    margin-top:1%;
+}
+  
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.swiper-slide .main-bottle {
+    display: flex;
+    height: 40vw;
+}
+  
+.text-container {
+    width: 40%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.text-container h3, h4, p{
+    margin: 1% 0;
+}
+  
+.text-container h4{
+    margin-bottom: 4%;
+}
+  
+.text-container button{
+    margin-top: 6%;
+}
+  
+.button {
+    width: 20%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: solid 1px black;
+}
+  
+.thumb img {
+    display: block;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    right: 0;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    margin: 0 5%;
+}
+  
+.mySwiper2 {
+    height: 80vh;
+    width: 100%;
+    margin-right: 0;
+}
+  
+.mySwiper {
+    height: 22vh;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    width: 70%;
+}
+
+.mySwiper .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+}
+  
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+  
+.swiper-button-next, .swiper-button-prev{
+    margin: 0 5%;
+}
+  
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 2em;
+}
+  
+.thumb{
+    display: flex;
+    flex-direction: column;
+}
+  
+.thumb h6 {
+    margin-bottom: 3%;
+}
+  
+.overlay {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: -8%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+  
+.thumb:hover .overlay {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+  
+.main-bottle{
+    z-index: 2;
+}
+  
+.swiper-slide .button{
+   z-index: 3;
+} 
+
+.button{
+    transition: all .3s ease-in-out;
+}
+  
+.button:hover{
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 15em 0 0 0 #000000;
+}
+  
+
+/* background ingredients */
+
+.text-container img{
+   position:absolute;
+   opacity:0.1; 
+}
+
+.lime-slice{
+    width: 17%;
+    transform: rotate(-70deg);
+    margin-left: -13%;
+    margin-top: 15%;
+}
+  
+.coriander{
+    width: 25%;
+    transform: rotate(-80deg);
+    margin-left: 33%;
+    margin-top: -19%;
+}
+  
+.lime{
+    width: 14%;
+    transform: rotate(-27deg);
+    margin-left: -39%;
+    margin-top: -7%;
+}
+  
+.text-container .floral2-bg {
+    width: 33%;
+    transform: rotate(186deg);
+    margin-left: 26.5%;
+    margin-top: -14%;
+}
+  
+.ginger-bg{
+    width: 17%;
+    transform: rotate(8deg);
+    margin-left: -36.5%;
+    margin-top: 17.5%; 
+}
+  
+.text-container .orange-bg {
+    width: 11%;
+    transform: rotate(60deg);
+    margin-left: 24%;
+    margin-top: 16%;
+}
+  
+.jasmine {
+    width: 17%;
+    transform: rotate(-12deg);
+    margin-left: -33%;
+    margin-top: -5%;
+}
+  
+.lemon {
+    width: 13%;
+    transform: rotate(290deg);
+    margin-left: -30%;
+    margin-top: -8%;
+}
+  
+.flower {
+    width: 17%;
+    transform: rotate(320deg);
+    margin-left: -34%;
+    margin-top: 10%;
+}
+  
+.sage {
+    width: 14%;
+    transform: scaleX(-1) rotate(110deg);
+    opacity: 0.15;
+    margin-left: 38.5%;
+    margin-top: -23%;
+}
+  
+.vanilla{
+    width: 20%;
+    transform: rotate(-20deg);
+    margin-left: -37%;
+    margin-top: 9%;
+}
+  
+.cinnamon{
+    width: 22%;
+    transform: scaleX(-1);
+    margin-left: 26%;
+    margin-top: 14%;
+}
+  
+.plant{
+    width: 16%;
+    transform: scaleY(-1) rotate(-40deg);
+    margin-left: 43%;
+    margin-top: -11%;
+}
+  
+.wood{
+    width: 15vw;
+    margin-top: 12%;
+    margin-left: 28%;
+    transform: rotate(77deg);
+}
+  
+.orange-slice{
+    width: 15vw;
+    transform: scaleX(-1) rotate(-70deg);
+    margin-left: -33%;
+    margin-top: 12%;
+}
+  
+.iris{
+    width: 21vw;
+    transform: rotate(310deg);
+    margin-left: 38%;
+    margin-top: -14%;
+    opacity: 0.2;
+}
+  
+.raspberry{
+    width: 16vw;
+    transform: scaleX(-1);
+    margin-left: 26%;
+    margin-top: 9.5%;
+}
+  
+.mandarin{
+    width: 13vw;
+    transform: rotate(-47deg);
+    margin-left: -34%;
+    margin-top: -10%;
+}
+  
+.jasmin{
+    width: 31%;
+    transform: rotate(58deg);
+    margin-left: 26%;
+    margin-top: -16%;
+    opacity:0.15;
+}
+  
+  
+ 
+/*============= RESPONSIVE DESIGN =================*/ 
+@media screen and (max-width:1366px){
+    .overlay{
+        margin-left:23%;
+    }
+}
+  
+@media screen and (max-width:1024px){
+   .raspberry{
+        margin-top: 12%;
+    }
+    
+    h2{
+        margin-top: 8%;
+    }
+
+    .overlay{
+        display: none;
+    }
+}
+  
+@media screen and (max-width: 960px){
+    .mySwiper{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .text-container p{
+        font-size: 0.9em;
+    }
+
+    .text-container button {
+       
+        font-size: 0.8em;
+    }
+
+    .text-container h3 {
+        font-size: 1em;
+    }
+
+    .text-container h4 {
+        font-size: 0.8em;
+    }
+
+    .swiper-slide {
+        display: inline;
+    }
+
+    .swiper-slide .main-bottle {
+        height:60vh;
+        margin-left: 35%;
+    }
+
+    .text-container{
+        width: 80%;
+    }
+
+    .text-container img {
+    display: none; 
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        margin-top: -20%;
+    }
+
+    .mySwiper {
+        margin-top: -5%;
+        width: 85%;
+        text-align: center;
+    }
+
+    .mySwiper2 {
+        height: 100vh;
+    }
+    
+    .overlay{
+        display: none;
+    }
+
+    .thumb h6 {
+        font-size: 0.3em;
+    }
+
+    .thumb img{
+        margin-left: -20%;
+    }
+}
+
+/*======== MOBILE ===========*/
+
+@media screen and (max-width: 425px){
+    .swiper-button-next:after, .swiper-button-prev:after{
+      font-size: 1.5em;
+    }
+
+    .swiper-slide{
+      justify-content: center;
+    }
+  
+    #Products{
+      width: 100vw;
+    }
+
+    .thumb img {
+      display: block;
+      height: 75%;
+    }
+
+    .text-container p{
+        font-size:0.6em;
+    }
+
+    .text-container button{
+        margin: 10% auto;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    .swiper-slide .main-bottle {
+        margin-left: 22%;
+    }  
+}
+
+@media screen and (max-width:360px){
+  .swiper-slide .main-bottle {
+    height:55vh;
+    margin-left: 27%;
+    }
+
+    .text-container button {
+    width: 40%;
+    }
+}
